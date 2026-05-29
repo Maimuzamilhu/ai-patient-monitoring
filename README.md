@@ -113,7 +113,7 @@ Unlike RNNs that process tokens sequentially, Transformers use self-attention to
 
 No single model is ready for autonomous clinical deployment out of the box (the best Recall was **0.512** from the unidirectional GRU). 
 
-For a production environment, we recommend a **two-track system**:
+For a production environment, I recommend a **two-track system**:
 1. **Unidirectional GRU (Vitals Track):** Continuously processes streaming vital signs in real time. It is fast, data-efficient, and does not look into the future.
 2. **ClinicalBERT (Notes Track):** Runs on demand whenever a clinician saves a new progress note to capture qualitative risk factors.
 
